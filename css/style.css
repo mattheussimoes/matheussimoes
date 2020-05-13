@@ -1,12 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-color: #0f1626; /*#233237*/
-    background-size: auto 100vh;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*background-color: #0f1626; /*#233237*/
+    background-image: url(../img/img-bg.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    opacity: 0.9;
+    font-family: 'Antic Didone', serif;
     height: 100vh;
+    font-size: 12px;
+  }
+  
+  /*div {
+    background-image: url(../img/img-bg.png);
+  }*/
+  /*se a tela tiver menos 400px vai carregar estes estilos*/
+@media (min-width: 400px){
+    body {
+      font-size: 14px;
+    }
+    }
+
+    /*breakpoint*/
+@media (min-width: 600px){
+    body {
+      font-size: 18px;
+    }
+}
+
+  header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
+  
   .menu {
     background-color: whitesmoke;
+    position: fixed;
+    width: 100vw;
+    top: 0;
   }
   .menu li {
     list-style: none;
@@ -15,7 +54,12 @@ body {
     display: flex;
     justify-content: space-around;
   }
-
+  .menu a{
+    display: block;
+    padding: 10px 15px;
+    
+  }
+  
   a{
     color: rgb(33, 63, 117);
     text-decoration: none;
@@ -24,12 +68,25 @@ body {
     text-decoration: underline;
   }
 
+  
+
   .site-subtitle,
   .site-title {
     color: whitesmoke;
     text-align: center;
+
+  }
+  .site-title{
+    font-size: 4em;
+    font-family: 'Berkshire Swash', cursive;
   }
 
   .site-subtitle {
     font-style: italic;
+    font-family: 'Patrick Hand SC', cursive;
+  }
+
+  .img-port{
+    height: 150px;
+    width: 180px;
   }
