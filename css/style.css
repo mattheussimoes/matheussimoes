@@ -12,7 +12,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     opacity: 0.9;
-    font-family: 'Antic Didone', serif;
+    font-family: 'Vidaloka', serif;
     height: 1vh;
     font-size: 12px;
 }
@@ -68,7 +68,7 @@ header {
 .menu ul {
     display: flex;
     justify-content: space-around;
-    font-family: monospace;
+    font-family: 'Bowlby One SC', cursive;
 }
 
 .menu a {
@@ -80,11 +80,11 @@ header {
 .menu a:active,
 .menu a:hover {
     background-color: rgb(255, 255, 255);
-    color: rgb(59, 57, 57);
+    color: rgb(0, 0, 0);
 }
 
 a {
-    color: rgb(71, 67, 67);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -114,20 +114,20 @@ a:hover {
 
 .site-subtitle,
 .site-title {
-    color: rgb(255, 255, 255);
+    color: rgb(247, 243, 243);
     text-align: justify;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .site-title {
     font-size: 5em;
-    font-family: inherit;
+    font-family: 'Tangerine', cursive;
     padding: 1vh;
 }
 
 .site-subtitle {
     font-style: italic;
-    /*! font-family: time new romans,inherit; */
+    font-family: 'Philosopher', sans-serif;
 }
 
 .contato,
@@ -139,7 +139,7 @@ a:hover {
 .contato h2,
 .proj h2 {
     font-size: 2em;
-    font-family: monospace;
+    font-family: 'Vidaloka', serif;
     margin-bottom: auto;
     color: rgb(255, 255, 255);
     padding: 1vh;
