@@ -68,7 +68,7 @@ header {
 .menu ul {
     display: flex;
     justify-content: space-around;
-    font-family: 'Bowlby One SC', cursive;
+    font-family: Cambria, Cochin, Georgia, Times, serif;
 }
 
 .menu a {
