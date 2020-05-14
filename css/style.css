@@ -5,7 +5,8 @@
 }
 
 body {
-    /*background-color: #0f1626; /*#233237*/
+    background-color: #000000;
+    /*#233237*/
     /*! background-image: url(../img/img-bg.png); */
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -78,12 +79,12 @@ header {
 
 .menu a:active,
 .menu a:hover {
-    background-color: rgb(33, 63, 117);
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(59, 57, 57);
 }
 
 a {
-    color: rgb(33, 63, 117);
+    color: rgb(71, 67, 67);
     text-decoration: none;
 }
 
@@ -113,20 +114,20 @@ a:hover {
 
 .site-subtitle,
 .site-title {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: justify;
     opacity: 0.8;
 }
 
 .site-title {
     font-size: 5em;
-    font-family: cursiv;
-    padding: 9vh;
+    font-family: inherit;
+    padding: 1vh;
 }
 
 .site-subtitle {
     font-style: italic;
-    font-family: 'Patrick Hand SC', cursive;
+    /*! font-family: time new romans,inherit; */
 }
 
 .contato,
@@ -196,7 +197,7 @@ a:hover {
 }
 
 .contato a {
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 5em;
     transition: text-shadow .5s;
 }
@@ -204,5 +205,5 @@ a:hover {
 .contato a:active,
 .contato a:hover {
     text-decoration: none;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 4.5);
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 1.2);
 }
