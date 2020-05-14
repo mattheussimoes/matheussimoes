@@ -8,11 +8,11 @@ body {
     /*background-color: #0f1626; /*#233237*/
     background-image: url(../img/img-bg.png);
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-size: cover;
     opacity: 0.9;
     font-family: 'Antic Didone', serif;
-    height: 100vh;
+    height: 1vh;
     font-size: 12px;
   }
   
@@ -31,6 +31,11 @@ body {
     body {
       font-size: 18px;
     }
+}
+@media (min-width: 1200px){
+  body {
+    font-size: 20px;
+  }
 }
 
   header{
@@ -53,6 +58,7 @@ body {
   .menu ul {
     display: flex;
     justify-content: space-around;
+    font-family: monospace;
   }
   .menu a{
     display: block;
@@ -72,13 +78,17 @@ body {
 
   .site-subtitle,
   .site-title {
-    color: whitesmoke;
-    text-align: center;
+    color: rgb(255, 255, 255);
+    text-align: justify;
 
+    background-color: black;
+    opacity: 0.8;
   }
   .site-title{
-    font-size: 4em;
-    font-family: 'Berkshire Swash', cursive;
+    font-size: 5em;
+    font-family: cursiv;
+    border: #f9f9f9;
+    padding: 9vh;
   }
 
   .site-subtitle {
@@ -86,7 +96,57 @@ body {
     font-family: 'Patrick Hand SC', cursive;
   }
 
-  .img-port{
-    height: 150px;
-    width: 180px;
+  .proj {
+    padding: 2em;
+}
+
+  .proj h2 {
+    font-size: 2em ;
+    font-family: monospace;
+    margin-bottom: auto;
+    color: rgb(255, 255, 255);
+    padding: 1vh;
+    background: black;
+    margin-top: 40vh;
   }
+
+  .proj .grid {
+    display: grid;
+    gap: 2em;
+  }
+
+  @media (min-width: 540px) {
+    .proj .grid {
+      grid-template-columns: 240px 240px;
+    }
+  }
+
+  @media (min-width: 540px) {
+    .proj .grid {
+      grid-template-columns: repeat(2, 240px);
+      align-content: center;
+      justify-content: center;
+      height: calc(100vh - 8em - 48px);
+     
+    }
+  }
+
+
+  .proj figure {
+    text-align: center;
+  }
+
+  .img-port{
+    height: 180px;
+    width: 240px;
+    object-fit: cover;
+    border-radius: 100px;
+  }
+
+  /*@media (min-width: 1200px) {
+    .img-port {
+      height: auto;
+      width: 100%;
+    }
+  }
+*/
